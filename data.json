@@ -1,0 +1,8 @@
+{"prompt":"What are the opening hours of the store on weekdays? ->","completion":" The store is open from 8 AM to 8 PM, Monday through Friday.\n"}
+{"prompt":"What are the opening hours of the store on weekends? ->","completion":" On Saturdays, we're open from 8 AM to 8 PM. On Sundays, our hours are 10 AM to 6 PM.\n"}
+{"prompt":"Does the store carry organic fruits? ->","completion":" Yes, we offer a variety of organic fruits in our produce section.\n"}
+{"prompt":"Does the store carry organic vegetables? ->","completion":" Yes, we have a wide selection of organic vegetables.\n"}
+{"prompt":"What is the store's return policy for fresh produce? ->","completion":" Fresh produce can be returned within 7 days of purchase with a valid receipt.\n"}
+{"prompt":"What is the store's return policy for non-perishable items? ->","completion":" Non-perishable items can be returned within 30 days of purchase with a valid receipt.\n"}
+{"prompt":"Tell me more about the loyalty program. ->","completion":" Our loyalty program allows customers to earn points on every purchase. These points can be redeemed for discounts on future purchases. You can sign up at the checkout counter or online.\n"}
+{"prompt":"What measures has the store taken in response to COVID-19? ->","completion":" We've implemented several safety measures, including regular cleaning and sanitizing, mandatory mask-wearing, social distancing markers, and hand sanitizer stations.\n"}
