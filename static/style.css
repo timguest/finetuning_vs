@@ -1,0 +1,39 @@
+
+$('#chatform').submit(function(e) {
+    e.preventDefault();
+    var question = $('#chatinput').val();
+    $('#chatinput').val('');
+
+    // Append user message
+    $('.chat-box').append(`
+        <div class="media w-50 mb-3 ml-auto">
+            <div class="media-body">
+                <div class="bg-primary rounded py-2 px-3 mb-2">
+                    <p class="text-small mb-0 text-white">${question}</p>
+                </div>
+                <p class="small text-muted">${new Date().toLocaleTimeString()}</p>
+            </div>
+        </div>`);
+
+    // Show "typing" animation
+    $('.typing-animation').removeClass('d-none');
+
+    $.post("/", {msg: question}, function(data) {
+        // Append bot message
+        $('.chat-box').append(`
+            <div class="media w-50 mb-3">
+                <div class="media-body ml-3">
+                    <div class="bg-light rounded py-2 px-3 mb-2">
+                        <p class="text-small mb-0 text-muted">${data.answer}</p>
+                    </div>
+                    <p class="small text-muted">${new Date().toLocaleTimeString()}</p>
+                </div>
+            </div>`);
+
+        // Hide "typing" animation
+        $('.typing-animation').addClass('d-none');
+
+        // Scroll chat window down
+        $('.chat-box').scrollTop($('.chat-box')[0].scrollHeight);
+    });
+});
